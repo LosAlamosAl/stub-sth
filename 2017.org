@@ -1,0 +1,57 @@
+#+TITLE: Cubs Season Ticket Log 2017
+#+AUTHOR: Allen McPherson
+#+EMAIL: allen.mcpherson@gmail.com
+
+(Use C-c . to insert date, <RET> to insert new row, then tab through fields)
+
+#+TBLNAME: ticket-classes
+| class    | games | price |
+|----------+-------+-------|
+| diamond  |     3 | 86.00 |
+| marquee  |    19 | 81.00 |
+| platinum |    14 | 67.00 |
+| gold     |    24 | 57.00 |
+| silver   |    12 | 44.00 |
+| bronze   |     9 | 25.00 |
+
+
+#+TBLNAME: game-schedule
+| game-date        | opponent | class   |
+|------------------+----------+---------|
+| <2017-04-10 Mon> | dodgers  | diamond |
+| <2017-04-12 Wed> | dodgers  | bronze  |
+| <2017-04-13 Thu> | dodgers  | bronze  |
+| <2017-04-14 Fri> | pirates  | silver  |
+| <2017-04-15 Sat> | pirates  | gold    |
+| <2017-04-16 Sun> | pirates  | silver  |
+| <2017-04-17 Mon> | brewers  | bronze  |
+| <2017-04-18 Tue> | brewers  | bronze  |
+| <2017-04-19 Wed> | brewers  | bronze  |
+
+
+#+TBLNAME: stub-listing
+| list-date        | game-date        | stub-low | stub-high | stub-sug | initial |
+|------------------+------------------+----------+-----------+----------+---------|
+| <2017-03-21 Tue> | <2017-04-10 Mon> |   142.00 |    187.00 |   159.00 |  230.00 |
+| <2017-03-21 Tue> | <2017-04-12 Wed> |    78.00 |    104.00 |    84.00 |  150.00 |
+| <2017-03-21 Tue> | <2017-04-13 Thu> |    28.00 |     46.00 |    31.00 |   50.00 |
+| <2017-03-21 Tue> | <2017-04-14 Fri> |    44.00 |     68.00 |    56.00 |   80.00 |
+| <2017-03-21 Tue> | <2017-04-15 Sat> |    63.00 |     79.00 |    73.00 |   90.00 |
+| <2017-03-21 Tue> | <2017-04-16 Sun> |    38.00 |     65.00 |    44.00 |   80.00 |
+| <2017-03-21 Tue> | <2017-04-17 Mon> |    17.00 |     41.00 |    33.00 |   50.00 |
+| <2017-03-21 Tue> | <2017-04-18 Tue> |    22.00 |     34.00 |    30.00 |   40.00 |
+| <2017-03-21 Tue> | <2017-04-19 Wed> |    23.00 |     37.00 |    34.00 |   40.00 |
+
+
+#+TBLNAME: stub-sale
+| sale-date        | game-date        | sale-price | payout | initial | delta |
+|------------------+------------------+------------+--------+---------+-------|
+| <2017-03-21 Tue> | <2017-04-10 Mon> |     142.00 |        |         |       |
+
+
+#+TBLNAME: non-stub
+| game-date        | used  | guests       | price |
+|------------------+-------+--------------+-------|
+| <2017-03-21 Tue> | bruce | thomas, matt |       |
+| <2017-04-20 Thu> | al    | al, kirk     |       |
+
