@@ -46,12 +46,11 @@
 #+TBLNAME: stub-sale
 | sale-date        | game-date        | sale-price | payout | initial | delta |
 |------------------+------------------+------------+--------+---------+-------|
-| <2017-03-21 Tue> | <2017-04-10 Mon> |     142.00 |        |         |       |
+| <2017-04-10 Mon> | <2017-04-12 Wed> |     140.00 | 126.00 |         |       |
 
 
 #+TBLNAME: non-stub
-| game-date        | used  | guests       | price |
-|------------------+-------+--------------+-------|
-| <2017-03-21 Tue> | bruce | thomas, matt |       |
-| <2017-04-20 Thu> | al    | al, kirk     |       |
+| game-date        | used | guests   | price |
+|------------------+------+----------+-------|
+| <2017-04-10 Mon> | al   | al, troy |       |
 
