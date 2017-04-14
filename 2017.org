@@ -16,17 +16,34 @@
 
 
 #+TBLNAME: game-schedule
-| game-date        | opponent | class   |
-|------------------+----------+---------|
-| <2017-04-10 Mon> | dodgers  | diamond |
-| <2017-04-12 Wed> | dodgers  | bronze  |
-| <2017-04-13 Thu> | dodgers  | bronze  |
-| <2017-04-14 Fri> | pirates  | silver  |
-| <2017-04-15 Sat> | pirates  | gold    |
-| <2017-04-16 Sun> | pirates  | silver  |
-| <2017-04-17 Mon> | brewers  | bronze  |
-| <2017-04-18 Tue> | brewers  | bronze  |
-| <2017-04-19 Wed> | brewers  | bronze  |
+| game-date        | opponent | class    |
+|------------------+----------+----------|
+| <2017-04-10 Mon> | dodgers  | diamond  |
+| <2017-04-12 Wed> | dodgers  | bronze   |
+| <2017-04-13 Thu> | dodgers  | bronze   |
+| <2017-04-14 Fri> | pirates  | silver   |
+| <2017-04-15 Sat> | pirates  | gold     |
+| <2017-04-16 Sun> | pirates  | silver   |
+| <2017-04-17 Mon> | brewers  | bronze   |
+| <2017-04-18 Tue> | brewers  | bronze   |
+| <2017-04-19 Wed> | brewers  | bronze   |
+| <2017-05-01 Mon> | phillies | bronze   |
+| <2017-05-02 Tue> | phillies | bronze   |
+| <2017-05-03 Wed> | phillies | bronze   |
+| <2017-05-04 Thu> | phillies | bronze   |
+| <2017-05-05 Fri> | yankees  | marquee  |
+| <2017-05-06 Sat> | yankees  | diamond  |
+| <2017-05-07 Sun> | yankees  | marquee  |
+| <2017-05-16 Tue> | reds     | silver   |
+| <2017-05-17 Wed> | reds     | silver   |
+| <2017-05-18 Thu> | reds     | silver   |
+| <2017-05-19 Fri> | brewers  | gold     |
+| <2017-05-20 Sat> | brewers  | platinum |
+| <2017-05-21 Sun> | brewers  | gold     |
+| <2017-05-22 Mon> | giants   | gold     |
+| <2017-05-23 Tue> | giants   | gold     |
+| <2017-05-24 Wed> | giants   | gold     |
+| <2017-05-25 Thu> | giants   | gold     |
 
 
 #+TBLNAME: stub-listing
@@ -48,10 +65,14 @@
 |------------------+------------------+------------+--------+---------+-------|
 | <2017-04-10 Mon> | <2017-04-12 Wed> |     140.00 | 126.00 |         |       |
 | <2017-04-14 Fri> | <2017-04-14 Fri> |      80.00 |  72.00 |         |       |
+| <2017-04-14 Fri> | <2017-04-15 Sat> |     130.00 | 117.00 |         |       |
 
 
 #+TBLNAME: non-stub
-| game-date        | used | guests   | price |
-|------------------+------+----------+-------|
-| <2017-04-10 Mon> | al   | al, troy |       |
+| game-date        | used  | guests        | price |
+|------------------+-------+---------------+-------|
+| <2017-04-10 Mon> | al    | al, troy      |       |
+| <2017-05-05 Fri> | bruce | bruce, felipe |       |
+| <2017-05-06 Sat> | bruce | bruce, felipe |       |
+| <2017-05-07 Sun> | bruce | bruce, felipe |       |
 
