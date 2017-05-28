@@ -2,7 +2,11 @@
 #+AUTHOR: Allen McPherson
 #+EMAIL: allen.mcpherson@gmail.com
 
+* Data
 (Use C-c . to insert date, <RET> to insert new row, then tab through fields)
+
+** STH Ticket Prices
+These are the price we paid (as part of our STH package) for each class of tickets.
 
 #+TBLNAME: ticket-classes
 | class    | games | price |
@@ -14,6 +18,7 @@
 | silver   |    12 | 44.00 |
 | bronze   |     9 | 25.00 |
 
+** 2017 Schedule
 
 #+TBLNAME: game-schedule
 | game-date        | opponent  | class    | price |
@@ -59,6 +64,7 @@
 | <2017-06-21 Wed> | padres    | platinum | 67.00 |
 #+TBLFM: $4='(org-lookup-first $3 '(remote(ticket-classes,@2$1..@>$1)) '(remote(ticket-classes,@2$3..@>$3)))
 
+** Listing Data
 May looks a little weird. I forgot to enter the StubHub ranges when I listed
 the tickets. So, the initial price is set as either the price when the listing
 expires (no sale) or the selling price.
@@ -104,6 +110,7 @@ expires (no sale) or the selling price.
 | <2017-05-28 Sun> | <2017-06-21 Tue> |    66.00 |     80.00 |    67.00 |   67.00 |
 
 
+** Sale Data
 
 #+TBLNAME: stub-sale
 | sale-date        | game-date        | sale-price | payout | initial | delta |
@@ -117,6 +124,9 @@ expires (no sale) or the selling price.
 | <2017-05-18 Thu> | <2017-05-18 Thu> |      30.00 |  27.00 |         |       |
 | <2017-05-12 Fri> | <2017-05-21 Sun> |     136.00 | 122.40 |         |       |
 
+
+** Personal Use
+These are games that we used ourselves (didn't try and sell).
 
 #+TBLNAME: non-stub
 | game-date        | used  | guests        | price  |
