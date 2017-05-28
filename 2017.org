@@ -16,35 +16,52 @@
 
 
 #+TBLNAME: game-schedule
-| game-date        | opponent | class    |
-|------------------+----------+----------|
-| <2017-04-10 Mon> | dodgers  | diamond  |
-| <2017-04-12 Wed> | dodgers  | bronze   |
-| <2017-04-13 Thu> | dodgers  | bronze   |
-| <2017-04-14 Fri> | pirates  | silver   |
-| <2017-04-15 Sat> | pirates  | gold     |
-| <2017-04-16 Sun> | pirates  | silver   |
-| <2017-04-17 Mon> | brewers  | bronze   |
-| <2017-04-18 Tue> | brewers  | bronze   |
-| <2017-04-19 Wed> | brewers  | bronze   |
-| <2017-05-01 Mon> | phillies | bronze   |
-| <2017-05-02 Tue> | phillies | bronze   |
-| <2017-05-03 Wed> | phillies | bronze   |
-| <2017-05-04 Thu> | phillies | bronze   |
-| <2017-05-05 Fri> | yankees  | marquee  |
-| <2017-05-06 Sat> | yankees  | diamond  |
-| <2017-05-07 Sun> | yankees  | marquee  |
-| <2017-05-16 Tue> | reds     | silver   |
-| <2017-05-17 Wed> | reds     | silver   |
-| <2017-05-18 Thu> | reds     | silver   |
-| <2017-05-19 Fri> | brewers  | gold     |
-| <2017-05-20 Sat> | brewers  | platinum |
-| <2017-05-21 Sun> | brewers  | gold     |
-| <2017-05-22 Mon> | giants   | gold     |
-| <2017-05-23 Tue> | giants   | gold     |
-| <2017-05-24 Wed> | giants   | gold     |
-| <2017-05-25 Thu> | giants   | gold     |
+| game-date        | opponent  | class    | price |
+|------------------+-----------+----------+-------|
+| <2017-04-10 Mon> | dodgers   | diamond  | 86.00 |
+| <2017-04-12 Wed> | dodgers   | bronze   | 25.00 |
+| <2017-04-13 Thu> | dodgers   | bronze   | 25.00 |
+| <2017-04-14 Fri> | pirates   | silver   | 44.00 |
+| <2017-04-15 Sat> | pirates   | gold     | 57.00 |
+| <2017-04-16 Sun> | pirates   | silver   | 44.00 |
+| <2017-04-17 Mon> | brewers   | bronze   | 25.00 |
+| <2017-04-18 Tue> | brewers   | bronze   | 25.00 |
+| <2017-04-19 Wed> | brewers   | bronze   | 25.00 |
+| <2017-05-01 Mon> | phillies  | bronze   | 25.00 |
+| <2017-05-02 Tue> | phillies  | bronze   | 25.00 |
+| <2017-05-03 Wed> | phillies  | bronze   | 25.00 |
+| <2017-05-04 Thu> | phillies  | bronze   | 25.00 |
+| <2017-05-05 Fri> | yankees   | marquee  | 81.00 |
+| <2017-05-06 Sat> | yankees   | diamond  | 86.00 |
+| <2017-05-07 Sun> | yankees   | marquee  | 81.00 |
+| <2017-05-16 Tue> | reds      | silver   | 44.00 |
+| <2017-05-17 Wed> | reds      | silver   | 44.00 |
+| <2017-05-18 Thu> | reds      | silver   | 44.00 |
+| <2017-05-19 Fri> | brewers   | gold     | 57.00 |
+| <2017-05-20 Sat> | brewers   | platinum | 67.00 |
+| <2017-05-21 Sun> | brewers   | gold     | 57.00 |
+| <2017-05-22 Mon> | giants    | gold     | 57.00 |
+| <2017-05-23 Tue> | giants    | gold     | 57.00 |
+| <2017-05-24 Wed> | giants    | gold     | 57.00 |
+| <2017-05-25 Thu> | giants    | gold     | 57.00 |
+| <2017-06-02 Fri> | cardinals | marquee  | 81.00 |
+| <2017-06-03 Sat> | cardinals | marquee  | 81.00 |
+| <2017-06-04 Sun> | cardinals | marquee  | 81.00 |
+| <2017-06-05 Mon> | marlins   | gold     | 57.00 |
+| <2017-06-06 Tue> | marlins   | gold     | 57.00 |
+| <2017-06-07 Wed> | marlins   | gold     | 57.00 |
+| <2017-06-08 Thu> | rockies   | gold     | 57.00 |
+| <2017-06-09 Fri> | rockies   | platinum | 67.00 |
+| <2017-06-10 Sat> | rockies   | marquee  | 81.00 |
+| <2017-06-11 Sun> | rockies   | platinum | 67.00 |
+| <2017-06-19 Mon> | padres    | gold     | 57.00 |
+| <2017-06-20 Tue> | padres    | gold     | 57.00 |
+| <2017-06-21 Wed> | padres    | platinum | 67.00 |
+#+TBLFM: $4='(org-lookup-first $3 '(remote(ticket-classes,@2$1..@>$1)) '(remote(ticket-classes,@2$3..@>$3)))
 
+May looks a little weird. I forgot to enter the StubHub ranges when I listed
+the tickets. So, the initial price is set as either the price when the listing
+expires (no sale) or the selling price.
 
 #+TBLNAME: stub-listing
 | list-date        | game-date        | stub-low | stub-high | stub-sug | initial |
@@ -58,6 +75,34 @@
 | <2017-03-21 Tue> | <2017-04-17 Mon> |    17.00 |     41.00 |    33.00 |   50.00 |
 | <2017-03-21 Tue> | <2017-04-18 Tue> |    22.00 |     34.00 |    30.00 |   40.00 |
 | <2017-03-21 Tue> | <2017-04-19 Wed> |    23.00 |     37.00 |    34.00 |   40.00 |
+| <2017-04-15 Sat> | <2017-05-01 Mon> |          |           |          |   12.00 |
+| <2017-04-15 Sat> | <2017-05-02 Tue> |          |           |          |   16.00 |
+| <2017-04-15 Sat> | <2017-05-03 Wed> |          |           |          |   16.00 |
+| <2017-04-15 Sat> | <2017-05-04 Thu> |          |           |          |   17.00 |
+| <2017-04-15 Sat> | <2017-05-16 Tue> |          |           |          |   34.00 |
+| <2017-04-15 Sat> | <2017-05-17 Wed> |          |           |          |   27.00 |
+| <2017-04-15 Sat> | <2017-05-18 Thu> |          |           |          |   30.00 |
+| <2017-04-15 Sat> | <2017-05-19 Fri> |          |           |          |   45.00 |
+| <2017-04-15 Sat> | <2017-05-20 Sat> |          |           |          |   68.00 |
+| <2017-04-15 Sat> | <2017-05-21 Sun> |          |           |          |  136.00 |
+| <2017-04-15 Sat> | <2017-05-22 Mon> |          |           |          |   31.00 |
+| <2017-04-15 Sat> | <2017-05-23 Tue> |          |           |          |   26.00 |
+| <2017-04-15 Sat> | <2017-05-24 Wed> |          |           |          |   30.00 |
+| <2017-04-15 Sat> | <2017-05-25 Thu> |          |           |          |   40.00 |
+| <2017-05-28 Sun> | <2017-06-02 Fri> |    85.00 |    108.00 |   105.00 |  105.00 |
+| <2017-05-28 Sun> | <2017-06-03 Sat> |   105.00 |    131.00 |   110.00 |  110.00 |
+| <2017-05-28 Sun> | <2017-06-04 Sun> |    64.00 |     72.00 |    66.00 |   66.00 |
+| <2017-05-28 Sun> | <2017-06-05 Mon> |    28.00 |     57.00 |    31.00 |   31.00 |
+| <2017-05-28 Sun> | <2017-06-06 Tue> |    27.00 |     43.00 |    31.00 |   31.00 |
+| <2017-05-28 Sun> | <2017-06-07 Tue> |    36.00 |     50.00 |    37.00 |   37.00 |
+| <2017-05-28 Sun> | <2017-06-08 Wed> |    49.00 |     60.00 |    57.00 |   57.00 |
+| <2017-05-28 Sun> | <2017-06-09 Thu> |    83.00 |    105.00 |    91.00 |   91.00 |
+| <2017-05-28 Sun> | <2017-06-10 Fri> |   102.00 |    192.00 |   108.00 |  150.00 |
+| <2017-05-28 Sun> | <2017-06-11 Sat> |    68.00 |    155.00 |    82.00 |  130.00 |
+| <2017-05-28 Sun> | <2017-06-19 Sun> |    43.00 |     99.00 |    43.00 |   43.00 |
+| <2017-05-28 Sun> | <2017-06-20 Mon> |    44.00 |     56.00 |    45.00 |   45.00 |
+| <2017-05-28 Sun> | <2017-06-21 Tue> |    66.00 |     80.00 |    67.00 |   67.00 |
+
 
 
 #+TBLNAME: stub-sale
@@ -66,13 +111,18 @@
 | <2017-04-10 Mon> | <2017-04-12 Wed> |     140.00 | 126.00 |         |       |
 | <2017-04-14 Fri> | <2017-04-14 Fri> |      80.00 |  72.00 |         |       |
 | <2017-04-14 Fri> | <2017-04-15 Sat> |     130.00 | 117.00 |         |       |
+| <2017-04-15 Sat> | <2017-04-16 Sun> |      60.00 |  54.00 |         |       |
+| <2017-04-17 Mon> | <2017-04-17 Mon> |      30.00 |  27.00 |         |       |
+| <2017-04-17 Mon> | <2017-04-18 Tue> |      30.00 |  27.00 |         |       |
+| <2017-05-18 Thu> | <2017-05-18 Thu> |      30.00 |  27.00 |         |       |
+| <2017-05-12 Fri> | <2017-05-21 Sun> |     136.00 | 122.40 |         |       |
 
 
 #+TBLNAME: non-stub
-| game-date        | used  | guests        | price |
-|------------------+-------+---------------+-------|
-| <2017-04-10 Mon> | al    | al, troy      |       |
-| <2017-05-05 Fri> | bruce | bruce, felipe |       |
-| <2017-05-06 Sat> | bruce | bruce, felipe |       |
-| <2017-05-07 Sun> | bruce | bruce, felipe |       |
-
+| game-date        | used  | guests        | price  |
+|------------------+-------+---------------+--------|
+| <2017-04-10 Mon> | al    | al, troy      | #ERROR |
+| <2017-05-05 Fri> | bruce | bruce, felipe | #ERROR |
+| <2017-05-06 Sat> | bruce | bruce, felipe | #ERROR |
+| <2017-05-07 Sun> | bruce | bruce, felipe | #ERROR |
+#+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
