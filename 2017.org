@@ -1,6 +1,5 @@
 #+TITLE: Cubs Season Ticket Log 2017
 #+AUTHOR: Allen McPherson
-#+EMAIL: allen.mcpherson@gmail.com
 
 * Data
 (Use C-c . to insert date, <RET> to insert new row, then tab through fields)
