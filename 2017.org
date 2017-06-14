@@ -61,6 +61,16 @@ These are the price we paid (as part of our STH package) for each class of ticke
 | <2017-06-19 Mon> | padres    | gold     | 57.00 |
 | <2017-06-20 Tue> | padres    | gold     | 57.00 |
 | <2017-06-21 Wed> | padres    | platinum | 67.00 |
+| <2017-07-04 Tue> | rays      | marquee  | 81.00 |
+| <2017-07-05 Wed> | rays      | platinum | 67.00 |
+| <2017-07-07 Fri> | pirates   | marquee  | 81.00 |
+| <2017-07-08 Sat> | pirates   | marquee  | 81.00 |
+| <2017-07-09 Sun> | pirates   | marquee  | 81.00 |
+| <2017-07-21 Fri> | cardinals | marquee  | 81.00 |
+| <2017-07-22 Sat> | cardinals | diamond  | 86.00 |
+| <2017-07-23 Sun> | cardinals | marquee  | 81.00 |
+| <2017-07-24 Mon> | white sox | marquee  | 81.00 |
+| <2017-07-25 Tue> | white sox | marquee  | 81.00 |
 #+TBLFM: $4='(org-lookup-first $3 '(remote(ticket-classes,@2$1..@>$1)) '(remote(ticket-classes,@2$3..@>$3)))
 
 ** Listing Data
@@ -107,6 +117,10 @@ expires (no sale) or the selling price.
 | <2017-05-28 Sun> | <2017-06-19 Sun> |    43.00 |     99.00 |    43.00 |   43.00 |
 | <2017-05-28 Sun> | <2017-06-20 Mon> |    44.00 |     56.00 |    45.00 |   45.00 |
 | <2017-05-28 Sun> | <2017-06-21 Tue> |    66.00 |     80.00 |    67.00 |   67.00 |
+| <2017-06-13 Tue> | <2017-07-04 Tue> |    85.00 |    108.00 |    92.00 |   92.00 |
+| <2017-06-13 Tue> | <2017-07-07 Fri> |    76.00 |    150.00 |   100.00 |  100.00 |
+| <2017-06-13 Tue> | <2017-07-08 Sat> |    90.00 |    120.00 |   104.00 |  104.00 |
+| <2017-06-13 Tue> | <2017-07-09 Sun> |    82.00 |    122.00 |    86.00 | 86.00   |
 
 
 ** Sale Data
@@ -129,6 +143,8 @@ expires (no sale) or the selling price.
 | <2017-06-03 Sat> | <2017-06-03 Sat> |      73.00 |  65.70 |         |       |
 | <2017-06-06 Tue> | <2017-06-06 Tue> |      22.00 |  19.80 |         |       |
 | <2017-06-07 Wed> | <2017-06-07 Wed> |      28.00 |  25.20 |         |       |
+| <2017-06-08 Thu> | <2017-06-08 Thu> |      35.00 |  31.50 |         |       |
+| <2017-06-10 Sat> | <2017-06-11 Sun> |      50.00 |  45.00 |         |       |
 
 
 ** Personal Use
@@ -141,4 +157,5 @@ These are games that we used ourselves (didn't try and sell).
 | <2017-05-05 Fri> | bruce | bruce, felipe | #ERROR |
 | <2017-05-06 Sat> | bruce | bruce, felipe | #ERROR |
 | <2017-05-07 Sun> | bruce | bruce, felipe | #ERROR |
+| <2017-07-05 Wed> | bruce | bruce, karen  |        |
 #+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
