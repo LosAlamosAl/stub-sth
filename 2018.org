@@ -1,0 +1,150 @@
+#+TITLE: Cubs Season Ticket Log 2018
+#+AUTHOR: Allen McPherson
+
+* Data
+(Use C-c . to insert date, <RET> to insert new row, then tab through fields)
+
+** STH Ticket Prices
+These are the price we paid (as part of our STH package) for each class of tickets.
+
+#+TBLNAME: ticket-classes
+| class    | games |  price |
+|----------+-------+--------|
+| diamond  |     4 | 101.92 |
+| marquee  |    19 |  94.08 |
+| platinum |    13 |  77.28 |
+| gold     |    15 |  63.84 |
+| silver   |    21 |  49.28 |
+| bronze   |     9 |  28.00 |
+
+** 2018 Schedule
+
+#+TBLNAME: game-schedule
+| game-date        | opponent     | class    |  price |
+|------------------+--------------+----------+--------|
+| <2018-04-09 Mon> | pirates      | diamond  | 101.92 |
+| <2018-04-11 Wed> | pirates      | bronze   |  28.00 |
+| <2018-04-12 Thu> | pirates      | bronze   |  28.00 |
+| <2018-04-13 Fri> | braves       | silver   |  49.28 |
+| <2018-04-14 Sat> | braves       | gold     |  63.84 |
+| <2018-04-15 Sun> | braves       | silver   |  49.28 |
+| <2018-04-16 Mon> | cardinals    | silver   |  49.28 |
+| <2018-04-17 Tue> | cardinals    | silver   |  49.28 |
+| <2018-04-18 Wed> | cardinals    | silver   |  49.28 |
+| <2018-04-26 Thu> | brewers      | bronze   |  28.00 |
+| <2018-04-27 Fri> | brewers      | silver   |  49.28 |
+| <2018-04-28 Sat> | brewers      | gold     |  63.84 |
+| <2018-04-29 Sun> | brewers      | silver   |  49.28 |
+| <2018-04-30 Mon> | rockies      | bronze   |  28.00 |
+| <2018-05-01 Tue> | rockies      | bronze   |  28.00 |
+| <2018-05-02 Wed> | rockies      | bronze   |  28.00 |
+| <2018-05-07 Mon> | marlins      | bronze   |  28.00 |
+| <2018-05-08 Tue> | marlins      | bronze   |  28.00 |
+| <2018-05-09 Wed> | marlins      | bronze   |  28.00 |
+| <2018-05-11 Fri> | white sox    | marguee  | #ERROR |
+| <2018-05-12 Sat> | white sox    | marguee  | #ERROR |
+| <2018-05-13 Sun> | white sox    | marguee  | #ERROR |
+| <2018-05-22 Tue> | indians      | gold     |  63.84 |
+| <2018-05-23 Wed> | indians      | gold     |  63.84 |
+| <2018-05-25 Fri> | giants       | gold     |  63.84 |
+| <2018-05-26 Sat> | giants       | platinum |  77.28 |
+| <2018-05-27 Sun> | giants       | gold     |  63.84 |
+| <2018-06-05 Tue> | phillies     | silver   |  49.28 |
+| <2018-06-06 Wed> | phillies     | silver   |  49.28 |
+| <2018-06-07 Thu> | phillies     | silver   |  49.28 |
+| <2018-06-08 Fri> | pirates      | platinum |  77.28 |
+| <2018-06-09 Sat> | pirates      | marquee  |  94.08 |
+| <2018-06-10 Sun> | pirates      | platinum |  77.28 |
+| <2018-06-18 Mon> | dodgers      | gold     |  63.84 |
+| <2018-06-19 Tue> | dodgers      | gold     |  63.84 |
+| <2018-06-20 Wed> | dodgers      | platinum |  77.28 |
+| <2018-06-29 Fri> | twins        | marguee  | #ERROR |
+| <2018-06-30 Sat> | twins        | diamond  | 101.92 |
+| <2018-07-01 Sun> | twins        | marquee  |  94.08 |
+| <2018-07-03 Tue> | tigers       | marquee  |  94.08 |
+| <2018-07-04 Wed> | tigers       | diamond  | 101.92 |
+| <2018-07-06 Fri> | reds         | marquee  |  94.08 |
+| <2018-07-07 Sat> | reds         | marquee  |  94.08 |
+| <2018-07-08 Sun> | reds         | marquee  |  94.08 |
+| <2018-07-19 Thu> | cardinals    | marquee  |  94.08 |
+| <2018-07-20 Fri> | cardinals    | marquee  |  94.08 |
+| <2018-07-21 Sat> | cardinals    | diamond  | 101.92 |
+| <2018-07-22 Sun> | cardinals    | marquee  |  94.08 |
+| <2018-07-23 Mon> | diamondbacks | platinum |  77.28 |
+| <2018-07-24 Tue> | diamondbacks | platinum |  77.28 |
+| <2018-07-25 Wed> | diamondbacks | platinum |  77.28 |
+| <2018-07-26 Thu> | diamondbacks | platinum |  77.28 |
+| <2018-08-02 Thu> | padres       | gold     |  63.84 |
+| <2018-08-03 Fri> | padres       | platinum |  77.28 |
+| <2018-08-04 Sat> | padres       | marquee  |  94.08 |
+| <2018-08-05 Sun> | padres       | platinum |  77.28 |
+| <2018-08-10 Fri> | nationals    | marquee  |  94.08 |
+| <2018-08-11 Sat> | nationals    | marquee  |  94.08 |
+| <2018-08-12 Sun> | nationals    | marquee  |  94.08 |
+| <2018-08-14 Tue> | brewers      | gold     |  63.84 |
+| <2018-08-15 Wed> | brewers      | gold     |  63.84 |
+| <2018-08-23 Thu> | reds         | silver   |  49.28 |
+| <2018-08-24 Fri> | reds         | gold     |  63.84 |
+| <2018-08-25 Sat> | reds         | platinum |  77.28 |
+| <2018-08-26 Sun> | reds         | gold     |  63.84 |
+| <2018-08-27 Mon> | mets         | silver   |  49.28 |
+| <2018-08-28 Tue> | mets         | silver   |  49.28 |
+| <2018-08-29 Wed> | mets         | silver   |  49.28 |
+| <2018-09-10 Mon> | brewers      | silver   |  49.28 |
+| <2018-09-11 Tue> | brewers      | silver   |  49.28 |
+| <2018-09-12 Wed> | brewers      | silver   |  49.28 |
+| <2018-09-14 Fri> | reds         | gold     |  63.84 |
+| <2018-09-15 Sat> | reds         | platinum |  77.28 |
+| <2018-09-16 Sun> | reds         | gold     |  63.84 |
+| <2018-09-24 Mon> | pirates      | silver   |  49.28 |
+| <2018-09-25 Tue> | pirates      | silver   |  49.28 |
+| <2018-09-26 Wed> | pirates      | silver   |  49.28 |
+| <2018-09-27 Thu> | pirates      | silver   |  49.28 |
+| <2018-09-28 Fri> | cardinals    | platinum |  77.28 |
+| <2018-09-29 Sat> | cardinals    | marquee  |  94.08 |
+| <2018-09-30 Sun> | cardinals    | marquee  |  94.08 |
+#+TBLFM: $4='(org-lookup-first $3 '(remote(ticket-classes,@2$1..@>$1)) '(remote(ticket-classes,@2$3..@>$3)))
+
+** StubHub Listing Data
+
+#+TBLNAME: stub-listing
+| list-date | game-date | N | stub-low | stub-high | stub-sug | initial |
+|-----------+-----------+---+----------+-----------+----------+---------|
+|           |           |   |          |           |          |         |
+
+
+** StubHub Sale Data
+
+#+TBLNAME: stub-sale
+| sale-date | game-date | sale-price | payout | initial | delta |
+|-----------+-----------+------------+--------+---------+-------|
+
+
+** Personal Sale Data
+Tickets NOT sold on StubHub.
+
+#+TBLNAME: stub-sale
+| sale-date | game-date | sale-price | payout |
+|-----------+-----------+------------+--------+
+
+
+** Personal Use
+These are games that we used ourselves (didn't try and sell).
+
+#+TBLNAME: non-stub
+| game-date        | used  | guests        | price  |
+|------------------+-------+---------------+--------|
+| <2017-04-10 Mon> | al    | al, troy      | #ERROR |
+| <2017-05-05 Fri> | bruce | bruce, felipe | #ERROR |
+| <2017-05-06 Sat> | bruce | bruce, felipe | #ERROR |
+| <2017-05-07 Sun> | bruce | bruce, felipe | #ERROR |
+| <2017-07-05 Wed> | bruce | bruce, karen  |        |
+| <2017-07-23 Sun> | al    | al, theresa   |        |
+| <2017-07-25 Tue> | al    | al, theresa   |        |
+| <2017-08-28 Mon> | both  | al, bruce     |        |
+| <2017-08-29 Tue> | both  | al, bruce     |        |
+| <2017-08-30 Wed> | both  | al, bruce     |        |
+| <2017-08-31 Thu> | both  | al, bruce     |        |
+| <2017-09-01 Fri> | both  | al, bruce     |        |
+| <2017-09-15 Fri> | bruce | bruce, karen  |        |
+#+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))

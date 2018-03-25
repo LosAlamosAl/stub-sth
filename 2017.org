@@ -248,4 +248,5 @@ These are games that we used ourselves (didn't try and sell).
 | <2017-08-30 Wed> | both  | al, bruce     |        |
 | <2017-08-31 Thu> | both  | al, bruce     |        |
 | <2017-09-01 Fri> | both  | al, bruce     |        |
+| <2017-09-15 Fri> | bruce | bruce, karen  |        |
 #+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
