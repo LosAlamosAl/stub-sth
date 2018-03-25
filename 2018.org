@@ -41,9 +41,9 @@ These are the price we paid (as part of our STH package) for each class of ticke
 | <2018-05-07 Mon> | marlins      | bronze   |  28.00 |
 | <2018-05-08 Tue> | marlins      | bronze   |  28.00 |
 | <2018-05-09 Wed> | marlins      | bronze   |  28.00 |
-| <2018-05-11 Fri> | white sox    | marguee  | #ERROR |
-| <2018-05-12 Sat> | white sox    | marguee  | #ERROR |
-| <2018-05-13 Sun> | white sox    | marguee  | #ERROR |
+| <2018-05-11 Fri> | white sox    | marquee  |  94.08 |
+| <2018-05-12 Sat> | white sox    | marquee  |  94.08 |
+| <2018-05-13 Sun> | white sox    | marquee  |  94.08 |
 | <2018-05-22 Tue> | indians      | gold     |  63.84 |
 | <2018-05-23 Wed> | indians      | gold     |  63.84 |
 | <2018-05-25 Fri> | giants       | gold     |  63.84 |
@@ -58,7 +58,7 @@ These are the price we paid (as part of our STH package) for each class of ticke
 | <2018-06-18 Mon> | dodgers      | gold     |  63.84 |
 | <2018-06-19 Tue> | dodgers      | gold     |  63.84 |
 | <2018-06-20 Wed> | dodgers      | platinum |  77.28 |
-| <2018-06-29 Fri> | twins        | marguee  | #ERROR |
+| <2018-06-29 Fri> | twins        | marquee  |  94.08 |
 | <2018-06-30 Sat> | twins        | diamond  | 101.92 |
 | <2018-07-01 Sun> | twins        | marquee  |  94.08 |
 | <2018-07-03 Tue> | tigers       | marquee  |  94.08 |
