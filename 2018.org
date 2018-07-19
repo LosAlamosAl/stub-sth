@@ -155,6 +155,16 @@ These are the price we paid (as part of our STH package) for each class of ticke
 | <2018-06-17 Sun> | <2018-07-07 Sat> | 2 |    88.00 |    89.00 |     93.00 |   89.00 |
 | <2018-06-17 Sun> | <2018-07-08 Sun> | 2 |    56.00 |    65.00 |    100.00 |   80.00 |
 | <2018-06-17 Sun> | <2018-07-26 Thu> | 2 |    48.00 |    50.00 |     62.00 |   60.00 |
+| <2018-07-18 Wed> | <2018-08-02 Thu> | 2 |    45.00 |    47.00 |     49.00 |   85.00 |
+| <2018-07-18 Wed> | <2018-08-03 Fri> | 2 |    72.00 |    76.00 |     78.00 |   95.00 |
+| <2018-07-18 Wed> | <2018-08-04 Sat> | 2 |    86.00 |    95.00 |    104.00 |  115.00 |
+| <2018-07-18 Wed> | <2018-08-05 Sun> | 2 |    65.00 |    69.00 |     73.00 |   97.00 |
+| <2018-07-18 Wed> | <2018-08-10 Fri> | 2 |    89.00 |    92.00 |    105.00 |  130.00 |
+| <2018-07-18 Wed> | <2018-08-11 Sat> | 2 |   115.00 |   117.00 |    122.00 |  130.00 |
+| <2018-07-18 Wed> | <2018-08-12 Sun> | 2 |    62.00 |    64.00 |     90.00 |  130.00 |
+| <2018-07-18 Wed> | <2018-08-14 Tue> | 2 |    49.00 |    50.00 |     57.00 |   85.00 |
+| <2018-07-18 Wed> | <2018-08-15 Wed> | 2 |    51.00 |    53.00 |     66.00 |   85.00 |
+
 
 
 ** StubHub Sale Data
@@ -216,9 +226,18 @@ These are games that we used ourselves (didn't try and sell).
 | <2018-04-16 Mon> | both | bruce, al |       | actual game on 7/21/2018 |
 | <2018-07-19 Thu> | both | bruce, al |       |                          |
 | <2018-07-20 Thu> | both | bruce, al |       |                          |
-| <2018-07-21 Thu> | both | bruce, al |       |                          |
-| <2018-07-22 Thu> | both | bruce, al |       |                          |
-| <2018-07-23 Thu> | both | bruce, al |       |                          |
-| <2018-07-24 Thu> | both | bruce, al |       |                          |
-| <2018-07-25 Thu> | both | bruce, al |       |                          |
+| <2018-07-21 Fri> | both | bruce, al |       |                          |
+| <2018-07-22 Sat> | both | bruce, al |       | doubleheader             |
+| <2018-07-22 Sat> | both | bruce, al |       | doubleheader             |
+| <2018-07-23 Sun> | both | bruce, al |       |                          |
+| <2018-07-24 Mon> | both | bruce, al |       |                          |
+| <2018-07-25 Tue> | both | bruce, al |       |                          |
+| <2018-07-26 Wed> | both | bruce, al |       |                          |
+| <2018-08-23 Thu> | both | bruce, al |       |                          |
+| <2018-08-24 Fri> | both | bruce, al |       |                          |
+| <2018-08-25 Sat> | both | bruce, al |       |                          |
+| <2018-08-26 Sun> | both | bruce, al |       |                          |
+| <2018-08-27 Mon> | both | bruce, al |       |                          |
+| <2018-08-28 Tue> | both | bruce, al |       |                          |
+| <2018-08-29 Wed> | both | bruce, al |       |                          |
 #+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
