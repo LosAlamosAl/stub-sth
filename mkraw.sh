@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # mkraw.sh - build raw data files of ticket sales/usage
 #
