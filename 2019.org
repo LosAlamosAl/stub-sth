@@ -1,0 +1,174 @@
+#+TITLE: Cubs Season Ticket Log 2019
+#+AUTHOR: Allen McPherson
+
+* Data
+(Use C-c . to insert date, <RET> to insert new row, then tab through fields)
+
+** STH Ticket Prices
+These are the price we paid (as part of our STH package) for each class of tickets.
+
+#+TBLNAME: ticket-classes
+| class    | games |  price |
+|----------+-------+--------|
+| diamond  |     4 | 122.08 |
+| marquee  |    17 | 110.88 |
+| platinum |    13 |  91.84 |
+| gold     |    23 |  75.04 |
+| silver   |    17 |  43.68 |
+| bronze   |     7 |  30.24 |
+
+** 2019 Schedule
+
+#+TBLNAME: game-schedule
+| game-date        | opponent     | class    |  price |
+|------------------+--------------+----------+--------|
+| <2019-04-08 Mon> | pirates      | diamond  | 122.08 |
+| <2019-04-10 Wed> | pirates      | bronze   |  30.24 |
+| <2019-04-11 Thu> | pirates      | bronze   |  30.24 |
+| <2019-04-12 Fri> | angels       | silver   |  43.68 |
+| <2019-04-13 Sat> | angels       | gold     |  75.04 |
+| <2019-04-14 Sun> | angels       | silver   |  43.68 |
+| <2019-04-19 Fri> | diamondbacks | silver   |  43.68 |
+| <2019-04-20 Sat> | diamondbacks | gold     |  75.04 |
+| <2019-04-21 Sun> | diamondbacks | silver   |  43.68 |
+| <2019-04-23 Tue> | dodgers      | silver   |  43.68 |
+| <2019-04-24 Wed> | dodgers      | silver   |  43.68 |
+| <2019-04-25 Thu> | dodgers      | bronze   |  30.24 |
+| <2019-05-03 Fri> | cardinals    | gold     |  75.04 |
+| <2019-05-04 Sat> | cardinals    | marquee  | 110.88 |
+| <2019-05-05 Sun> | cardinals    | platinum |  91.84 |
+| <2019-05-06 Mon> | marlins      | bronze   |  30.24 |
+| <2019-05-07 Tue> | marlins      | bronze   |  30.24 |
+| <2019-05-08 Wed> | marlins      | bronze   |  30.24 |
+| <2019-05-09 Thu> | marlins      | bronze   |  30.24 |
+| <2019-05-10 Fri> | brewers      | silver   |  43.68 |
+| <2019-05-11 Sat> | brewers      | platinum |  91.84 |
+| <2019-05-12 Sun> | brewers      | gold     |  75.04 |
+| <2019-05-20 Mon> | phillies     | silver   |  43.68 |
+| <2019-05-21 Tue> | phillies     | silver   |  43.68 |
+| <2019-05-22 Wed> | phillies     | silver   |  43.68 |
+| <2019-05-23 Thu> | phillies     | silver   |  43.68 |
+| <2019-05-24 Fri> | reds         | gold     |  75.04 |
+| <2019-05-25 Sat> | reds         | platinum |  91.84 |
+| <2019-05-26 Sun> | reds         | platinum |  91.84 |
+| <2019-06-04 Tue> | rockies      | gold     |  75.04 |
+| <2019-06-05 Wed> | rockies      | gold     |  75.04 |
+| <2019-06-06 Thu> | rockies      | gold     |  75.04 |
+| <2019-06-07 Fri> | cardinals    | marquee  | 110.88 |
+| <2019-06-08 Sat> | cardinals    | diamond  | 122.08 |
+| <2019-06-09 Sun> | cardinals    | marquee  | 110.88 |
+| <2019-06-18 Tue> | white sox    | marquee  | 110.88 |
+| <2019-06-19 Wed> | white soc    | marquee  | 110.88 |
+| <2019-06-20 Thu> | mets         | gold     |  75.04 |
+| <2019-06-21 Fri> | mets         | platinum |  91.84 |
+| <2019-06-22 Sat> | mets         | marquee  | 110.88 |
+| <2019-06-23 Sun> | mets         | platinum |  91.84 |
+| <2019-06-24 Mon> | braves       | gold     |  75.04 |
+| <2019-02-26 Tue> | braves       | gold     |  75.04 |
+| <2019-06-26 Wed> | braves       | gold     |  75.04 |
+| <2019-06-27 Thu> | braves       | platinum |  91.84 |
+| <2019-07-12 Fri> | pirates      | marquee  | 110.88 |
+| <2019-07-13 Sat> | pirates      | diamond  | 122.08 |
+| <2019-07-14 Sun> | pirates      | marquee  | 110.88 |
+| <2019-07-15 Mon> | reds         | platinum |  91.84 |
+| <2019-07-16 Tue> | reds         | platinum |  91.84 |
+| <2019-07-17 Wed> | reds         | platinum |  91.84 |
+| <2019-07-19 Fri> | padres       | marquee  | 110.88 |
+| <2019-07-20 Sat> | padres       | marquee  | 110.88 |
+| <2019-07-21 Sun> | padres       | marquee  | 110.88 |
+| <2019-08-02 Fri> | brewers      | marquee  | 110.88 |
+| <2019-08-03 Sat> | brewers      | diamond  | 122.08 |
+| <2019-08-04 Sun> | brewers      | marquee  | 110.88 |
+| <2019-08-05 Mon> | athletics    | gold     |  75.04 |
+| <2019-08-06 Tue> | athletics    | gold     |  75.04 |
+| <2019-08-07 Wed> | athletics    | gold     |  75.04 |
+| <2019-08-20 Tue> | giants       | gold     |  75.04 |
+| <2019-08-21 Wed> | giants       | gold     |  75.04 |
+| <2019-08-22 Thu> | giants       | gold     |  75.04 |
+| <2019-08-23 Fri> | nationals    | gold     |  75.04 |
+| <2019-08-24 Sat> | nationals    | marquee  | 110.88 |
+| <2019-08-25 Sun> | nationals    | gold     |  75.04 |
+| <2019-08-30 Fri> | brewers      | gold     |  75.04 |
+| <2019-08-31 Sat> | brewers      | marquee  | 110.88 |
+| <2019-09-01 Sun> | brewers      | platinum |  91.84 |
+| <2019-09-02 Mon> | mariners     | gold     |  75.04 |
+| <2019-09-03 Tue> | mariners     | silver   |  43.68 |
+| <2019-09-13 Fri> | pirates      | silver   |  43.68 |
+| <2019-09-14 Sat> | pirates      | platinum |  91.84 |
+| <2019-09-15 Sun> | pirates      | gold     |  75.04 |
+| <2019-09-16 Mon> | reds         | silver   |  43.68 |
+| <2019-09-17 Tue> | reds         | silver   |  43.68 |
+| <2019-09-18 Wed> | reds         | silver   |  43.68 |
+| <2019-09-19 Thu> | cardinals    | silver   |  43.68 |
+| <2019-09-20 Fri> | cardinals    | platinum |  91.84 |
+| <2019-09-21 Sat> | cardinals    | marquee  | 110.88 |
+| <2019-09-22 Sun> | cardinals    | marquee  | 110.88 |
+#+TBLFM: $4='(org-lookup-first $3 '(remote(ticket-classes,@2$1..@>$1)) '(remote(ticket-classes,@2$3..@>$3)))
+
+** StubHub Listing Data
+As of mid-July 2018, StubHub does not provide low/high/suggested prices when listing
+tickets. I now use the mobile app to price the tickets. It give a high/low
+suggested range (but not a suggested price).
+
+
+#+TBLNAME: stub-listing
+| list-date        | game-date        | N | stub-low | stub-sug | stub-high | initial |
+|------------------+------------------+---+----------+----------+-----------+---------|
+
+
+
+** StubHub Sale Data
+
+#+TBLNAME: stub-sale
+| sale-date        | game-date        | sale-price | payout | initial |   delta |
+|------------------+------------------+------------+--------+---------+---------|
+#+TBLFM: $4=$3*.9;%0.2f::$5='(org-lookup-first $2 '(remote(stub-listing,@2$2..@>$2)) '(remote(stub-listing,@2$7..@>$7)))::$6=$4-$5;%0.2f
+
+
+** Personal Sale Data
+Tickets NOT sold on StubHub.
+
+#+TBLNAME: stub-sale
+| sale-date        | game-date        | sale-price | payout |
+|------------------+------------------+------------+--------|
+#+TBLFM: $4=$3;%0.2f
+
+
+** Personal Use
+These are games that we used ourselves (didn't try and sell).
+
+#+TBLNAME: non-stub
+| game-date                | used | guests    |   price | note                     |
+|--------------------------+------+-----------+---------+--------------------------|
+|--------------------------+------+-----------+---------+--------------------------|
+| cost recovery correction |      |           | 1208.48 |                          |
+#+TBLFM: $4='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
+#+TBLFM: @>$4=vsum(@I..@II);%0.2f
+
+
+** Cost Recovery
+This is how much money we lost!
+
+#+TBLNAME: cost-recovery
+| game-date        |  price | sale-price |   delta | running-delta |
+|------------------+--------+------------+---------+---------------|
+|------------------+--------+------------+---------+---------------|
+| total recovery   |        |     #ERROR |  #ERROR |        #ERROR |
+#+TBLFM: $2='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
+#+TBLFM: $3='(org-lookup-first $1 '(remote(stub-sale,@2$2..@>$2)) '(remote(stub-sale,@2$4..@>$4)))
+#+TBLFM: $4=$3-$2;%0.2f::$5=vsum(@I$4..$4);%0.2f
+#+TBLFM: @>$5=@II-1 + remote(non-stub,@>$4);%0.2f
+
+
+
+#+TBLNAME: cost-recovery
+| game-date        |  price | sale-price |  delta | running-delta |
+|------------------+--------+------------+--------+---------------|
+|------------------+--------+------------+--------+---------------|
+| total recovery   |        |            |        |      -2210.84 |
+#+TBLFM: $2='(org-lookup-first $1 '(remote(game-schedule,@2$1..@>$1)) '(remote(game-schedule,@2$4..@>$4)))
+#+TBLFM: $3='(org-lookup-first $1 '(remote(stub-sale,@2$2..@>$2)) '(remote(stub-sale,@2$4..@>$4)))
+#+TBLFM: $4=$3-$2;%0.2f::$5=vsum(@I$4..$4);%0.2f
+#+TBLFM: @>$5=@II-1 + remote(non-stub,@>$4);%0.2f
+#+TBLFM: $3=if(@@#$$# == #ERROR, 0.00, @@#$$#);
+
